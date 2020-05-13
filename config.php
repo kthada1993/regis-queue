@@ -13,9 +13,9 @@ class ConfigDB
 	{
 		try {
 			$con = new PDO(
-				"mysql:host=172.16.46.2;dbname=hos",
-				"sa",
-				"sa",
+				"mysql:host=IPHOSXP;dbname=hos",
+				"u", //username
+				"p", //password
 				array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
 			);
 			return $con;
@@ -28,9 +28,9 @@ class ConfigDB
 	{
 		try {
 			$con = new PDO(
-				"mysql:host=172.16.46.6;dbname=queue",
-				"sa",
-				"sa",
+				"mysql:host=IPQ4U;dbname=queue",
+				"u", //username
+				"p", //password
 				array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
 			);
 			return $con;
